@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: black;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px;
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 10px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+        .navbar ul li a:hover {
+            background-color: #555;
+        }
+        .navbar .left {
+            margin-right: auto;
+        }
+        .navbar .right {
+            display: flex;
+        }
+        .banner {
+            background-image: url('imgs/banner.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            border-radius: 20px;
+            margin: 20px;
+            height: 200px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .rect {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            flex: 1;
+            max-width: 30%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .rect img {
+            width: 100%;
+            height: auto;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .purchase-grid {
+            display: flex;
+        }
+        .purchase-left {
+            flex: 1;
+            margin: 10px;
+        }
+        .purchase-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 10px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="left">
+            <li><a href="#">Home</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="#">Trocas</a></li>
+            <li><a href="#">Compras</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="banner">
+        <h1>Bem-vindo ao EcoHub</h1>
+        <p>Sua plataforma de trocas e compras sustentáveis</p>
+    </section>
+
+    <div class="content exchange-page">
+        <h1>Vem Trocar</h1>
+        <div class="grid">
+            <div class="rect">
+                <img src="imgs/produto1.png" alt="Produto 1">
+                <h3>Camisa Casual</h3>
+                <p>Camisa de algodão confortável para o dia a dia, disponível em várias cores.</p>
+            </div>
+            <div class="rect">
+                <img src="imgs/produto2.png" alt="Produto 2">
+                <h3>Camisa do Galo</h3>
+                <p>Camisa oficial do time Atlético Mineiro, ideal para os torcedores apaixonados.</p>
+            </div>
+            <div class="rect">
+                <img src="imgs/produto3.png" alt="Produto 3">
+                <h3>Agasalho Esportivo</h3>
+                <p>Agasalho esportivo leve e confortável, perfeito para atividades físicas.</p>
+            </div>
+            <div class="rect">
+                <img src="imgs/produto4.png" alt="Produto 4">
+                <h3>Sapatinho Infantil</h3>
+                <p>Sapatinhos macios e seguros para os primeiros passos dos bebês.</p>
+            </div>
+            <div class="rect">
+                <img src="imgs/produto8.png" alt="Produto 8">
+                <h3>Conjunto de Inverno</h3>
+                <p>Conjunto de roupas de inverno, ideal para manter-se aquecido nos dias frios.</p>
+            </div>
+            <div class="rect">
+                <img src="imgs/produto9.png" alt="Produto 9">
+                <h3>Macacão Infantil</h3>
+                <p>Macacão com estampa de macaquinho, confortável e divertido para crianças.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content purchase-page">
+        <h1>Compre no Precinho</h1>
+        <div class="purchase-grid">
+            <div class="purchase-left rect">
+                <img src="imgs/produto7.png" alt="Produto 7">
+                <h3>Botas de Couro</h3>
+                <p>Botas de couro premium, elegantes e duráveis para todas as ocasiões.</p>
+            </div>
+            <div class="purchase-right">
+                <div class="rect">
+                    <img src="imgs/produto5.png" alt="Produto 5">
+                    <h3>MacBook</h3>
+                    <p>MacBook de última geração, ideal para trabalho e lazer com alto desempenho.</p>
+                </div>
+                <div class="rect">
+                    <img src="imgs/produto6.png" alt="Produto 6">
+                    <h3>Xbox</h3>
+                    <p>Console Xbox, para uma experiência de jogo imersiva e divertida.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+        <p>EcoHub</p>
+    </footer>
+
+</body>
+</html>
